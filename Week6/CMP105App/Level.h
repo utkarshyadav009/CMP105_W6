@@ -4,6 +4,7 @@
 #include "Framework/Input.h"
 #include <string.h>
 #include <iostream>
+#include"GravityBall.h"
 
 
 class Level{
@@ -24,5 +25,9 @@ private:
 	sf::RenderWindow* window;
 	Input* input;
 
+
 	// More level variables
+	GravityBall g;
+	sf::Texture t;
+
 };
