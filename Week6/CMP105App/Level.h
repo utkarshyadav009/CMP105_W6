@@ -5,7 +5,7 @@
 #include <string.h>
 #include <iostream>
 #include"GravityBall.h"
-
+#include"MotionBall.h"
 
 class Level{
 public:
@@ -21,6 +21,9 @@ private:
 	void beginDraw();
 	void endDraw();
 
+	bool isfalling = false;
+	bool ismoving = false;
+
 	// Default variables for level class.
 	sf::RenderWindow* window;
 	Input* input;
@@ -28,6 +31,8 @@ private:
 
 	// More level variables
 	GravityBall g;
+	MotionBall m;
+	sf::Texture t1;
 	sf::Texture t;
 
 };

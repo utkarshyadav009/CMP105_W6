@@ -39,6 +39,9 @@
     <ClCompile Include="GravityBall.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="MotionBall.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="README.txt">
@@ -65,6 +68,9 @@
       <Filter>Framework</Filter>
     </ClInclude>
     <ClInclude Include="GravityBall.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MotionBall.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

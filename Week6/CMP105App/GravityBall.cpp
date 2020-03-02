@@ -7,10 +7,10 @@ GravityBall::GravityBall()
 }
 void GravityBall::update(float dt)
 {
-	if(input->isKeyDown(sf::Keyboard::Space))
-	{	
+	
+
 		input->setKeyUp(sf::Keyboard::Space);
-		sf::Vector2f pos = velocity * dt + 0.5f * gravity * dt * dt; //ut+ 1/2at^2
+		sf::Vector2f pos = velocity * dt + 0.4f * gravity * dt * dt; //ut+ 1/2at^2
 		velocity += gravity * dt;
 		setPosition(getPosition() + pos);
 		if (getPosition().y >= 500)
@@ -18,5 +18,5 @@ void GravityBall::update(float dt)
 			setPosition(getPosition().x, 500);
 			velocity = (-velocity) / 1.2f;
 		}
-	}
+	
 }
