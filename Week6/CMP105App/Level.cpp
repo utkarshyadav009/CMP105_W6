@@ -51,7 +51,6 @@ void Level::update(float dt)
 	
 	if(isfalling)
 		g.update(dt);
-	while(m.getPosition().x == input->getMouseX() && m.getPosition().y == input->getMouseY())
 		m.update(dt);
 
 }
